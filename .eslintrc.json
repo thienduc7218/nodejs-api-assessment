@@ -1,0 +1,40 @@
+{
+  "root": true,
+  "ignorePatterns": ["**/*"],
+  "plugins": ["@nrwl/nx"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {}
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "parser": "@typescript-eslint/parser",
+      "extends": [
+        "plugin:@typescript-eslint/eslint-recommended",
+        "prettier",
+        "plugin:@typescript-eslint/recommended"
+      ],
+      "rules": {
+        "no-prototype-builtins": "warn",
+        "no-sparse-arrays": "off",
+        "no-empty": "warn",
+        "no-empty-pattern": "warn",
+        "@typescript-eslint/no-unused-vars": [
+          "warn",
+          {
+            "argsIgnorePattern": "^_",
+            "varsIgnorePattern": "^_",
+            "vars": "all",
+            "args": "after-used",
+            "ignoreRestSiblings": false
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "rules": {}
+    }
+  ]
+}
