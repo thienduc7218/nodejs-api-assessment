@@ -130,13 +130,13 @@ NodeJS API Assignment is a backend service designed to help teachers perform adm
 To install the project, follow these steps:
 
 ```bash
-git clone https://github.com/thienduc7218/be-boilerplate.git
-cd be-boilerplate
+git clone https://github.com/thienduc7218/nodejs-api-assessment.git
+cd nodejs-api-assessment
 ```
 
 ### Environment setup
 
-To run this project, you will need to set up the following environment variables. You can do this by creating a `.env` file in folder `be-boilerplate`.
+To run this project, you will need to set up the following environment variables. You can do this by creating a `.env` file in folder `nodejs-api-assessment`.
 
 ```plaintext
 API_PREFIX=api
@@ -154,7 +154,7 @@ DOCKER_MYSQL_HOST=mysql
 
 ### Run docker compose
 
-At folder `be-boilerplate`, to build, start and run services:
+At folder `nodejs-api-assessment`, to build, start and run services:
 
 ```bash
 docker-compose up -d
