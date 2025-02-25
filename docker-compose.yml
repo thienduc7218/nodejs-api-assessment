@@ -6,10 +6,10 @@ services:
       dockerfile: Dockerfile
       context: .
     ports:
-      - 5000:5000
+      - "${PORT}:${PORT}" 
     environment:
       - MYSQL_DATABASE=${MYSQL_DATABASE}
-      - MYSQL_HOST=${DOCKER_MYSQL_HOST}
+      - MYSQL_HOST=mysql
       - MYSQL_PORT=${MYSQL_PORT}
       - MYSQL_USER=${MYSQL_USER}
       - MYSQL_PASSWORD=${MYSQL_PASSWORD}
